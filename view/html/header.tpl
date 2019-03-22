@@ -4,8 +4,8 @@
     <title>FYOB - {{title}}</title>
     <meta charset='UTF-8' />
     <link rel="stylesheet" href="src/css" type="text/css">
-    <script src="src/js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="src/js"></script>
   </head>
   <body>
     <header>
