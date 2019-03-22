@@ -3,11 +3,18 @@
   <head>
     <title>FYOB - {{title}}</title>
     <meta charset='UTF-8' />
-    <link rel="stylesheet" href="../css/def_format.css" type="text/css">
-    <script src="../js/def_script.js"></script>
-    <script src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="src/css" type="text/css">
+    <script src="src/js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
   </head>
   <body>
     <header>
-      
+      <img src="" alt=""/>
+      <nav>
+        <ul>
+          <li><a href="/">HOME</a>
+          <li><a href="/about">ABOUT</a>
+          <li><a href="/contact">CONTACT</a>
+        </ul>
+      </nav>
     </header>
