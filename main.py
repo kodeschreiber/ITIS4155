@@ -1,15 +1,17 @@
 #!/usr/bin/python3
 
 from bottle import *
-#from ctrl.index import Index
+import time
+import hashlib
 import os
 
 TEMPLATE_PATH.append('./view/html')
-root=os.path.abspath('./')
+root = os.path.abspath('./')
+refresh = random.randint()
 
 # Template Wrapper
 def wrap(temp, title):
-  return ( template('header.tpl', title=title), temp, template('footer.tpl') )
+  return ( template('header.tpl', title=title, refresh=refresh), temp, template('footer.tpl') )
 
 # CSS
 @route('/src/css')
