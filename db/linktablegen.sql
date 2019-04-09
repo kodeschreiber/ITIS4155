@@ -1,1 +1,0 @@
-/* This is for generating tables for linking parts, tools and bikes */
