@@ -4,10 +4,11 @@ from bottle import *
 import time
 import hashlib
 import os
+import random
 
 TEMPLATE_PATH.append('./view/html')
 root = os.path.abspath('./')
-refresh = random.randint()
+refresh = random.randint(0,1)
 
 # Template Wrapper
 def wrap(temp, title):
