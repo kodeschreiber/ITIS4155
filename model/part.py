@@ -20,3 +20,15 @@ class PartDB:
     ret = Part()
     ret.name, ret.desc, ret.avgp = res
     return ret
+
+  def getAll(self):
+    self._conn.execute("SELECT * FROM parts")
+    res = self._conn.fetchall()
+    if res == None or len(res) < 1:
+      raise ValueError(f'No such entries in table')
+    ret = list()
+    for row in res:
+      tmp = Part()
+      tmp.name, tmp.desc, tmp.avgp = row
+      ret.append(tmp)
+    return ret
