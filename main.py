@@ -6,9 +6,23 @@ import hashlib
 import os
 import random
 
+from model.bike   import *
+from model.linker import *
+from model.part   import *
+from model.region import *
+from model.tool   import *
+
 TEMPLATE_PATH.append('./view/html')
 root = os.path.abspath('./')
 refresh = random.randint(0,1)
+dbpath = './db/db.sqlite3'
+
+# DB Access
+bdb = BikeDB(dbpath)
+pdb = PartDB(dbpath)
+tdb = ToolDB(dbpath)
+rdb = RegionDB(dbpath)
+# bdb = BikeDB(dbpath)
 
 # Template Wrapper
 def wrap(temp, title):
@@ -32,17 +46,17 @@ def index():
 # About Us
 @route('/about')
 def about():
-  return 'SITE UNDER CONTRUCTION'
+  return wrap(template('sample_page.tpl'), 'About')
 
 # Contact
 @route('/contact')
 def contact():
-  return 'SITE UNDER CONTRUCTION'
+  return wrap(template('sample_page.tpl'), 'Contact')
 
 # Choose a bike
 @route('/bikes')
 def bikes():
-  return 'SITE UNDER CONTRUCTION'
+  return wrap(template('sample_page.tpl', ), 'Home')
 
 # List of part/tool
 @route('/search')

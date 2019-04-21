@@ -1,5 +1,5 @@
 /* Add INSERT Statments HERE */
-// Standard Tables (bikes, tools, parts, regions)
+/* Standard Tables (bikes, tools, parts, regions) */
 
 
-// Linker Tables (bikes -> regions, regions -> tools, regions -> parts)
+/* Linker Tables (bikes -> regions, regions -> tools, regions -> parts) */
