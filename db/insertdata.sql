@@ -69,6 +69,7 @@ INSERT INTO tools (name, descript, avgprice, url) VALUES ('tire puller', '', '',
 INSERT INTO tools (name, descript, avgprice, url) VALUES ('air pump', '', '', '')
 INSERT INTO tools (name, descript, avgprice, url) VALUES ('pressure guage', '', '', '')
 INSERT INTO tools (name, descript, avgprice, url) VALUES ('chain cleaner', '', '', '')
+INSERT INTO tools (name, descript, avgprice, url) VALUES ('presta valve adapter', '', '', '')
 
 INSERT INTO parts (name, descript, avgprice, url) VALUES ('tire', '', '', '')
 INSERT INTO parts (name, descript, avgprice, url) VALUES ('frame', '', '', '')
