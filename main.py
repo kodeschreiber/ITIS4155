@@ -44,14 +44,19 @@ def contact():
 def bikes():
   return 'SITE UNDER CONTRUCTION'
 
-# Choose a part
-@route('/parts')
+# List of part/tool
+@route('/search')
 def parts():
   return 'SITE UNDER CONTRUCTION'
-
-# Choose a tool
-@route('/tools')
-def tools():
+  
+# List of part/tool
+@route('/show')
+def parts():
+  return 'SITE UNDER CONTRUCTION'
+  
+# List of part/tool
+@route('/diagnose')
+def parts():
   return 'SITE UNDER CONTRUCTION'
   
 ### Error Handling ###
