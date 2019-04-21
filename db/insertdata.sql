@@ -54,6 +54,8 @@ INSERT INTO bikes (name, descript, avgprice, url) VALUES (
   450, 
   'https://www.bikensurfdubai.com/wp-content/uploads/2015/07/BREWSTER_CRUSIER_2015_SEAMLESS_SIDE_WEB_1024x1024.jpg')
   
+/* Please remove quotes for the third entry on each; it's supposed to be numeric */  
+
 INSERT INTO tools (name, descript, avgprice, url) VALUES ('allen wrench', '', '', '')
 INSERT INTO tools (name, descript, avgprice, url) VALUES ('standard-head screwdriver', '', '', '')
 INSERT INTO tools (name, descript, avgprice, url) VALUES ('philips-head screwdriver', '', '', '')
@@ -107,4 +109,74 @@ INSERT INTO regions (name, descript, diags, url) VALUES ('midframe', '', '', '')
 INSERT INTO <biketype>_regions (id) VALUES ((SELECT id from regions WHERE name='<region_name>'))
 INSERT INTO <region>_parts (id) VALUES ((SELECT id from parts WHERE name='<part_name>'))
 INSERT INTO <region>_tools (id) VALUES ((SELECT id from tools WHERE name='<tool_name>'))
+
 */
+
+
+/* Add regions to bikes */
+INSERT INTO road_regions (id) VALUES ((SELECT id from regions WHERE name='frame'))
+/* ... */
+
+INSERT INTO mountain_regions (id) VALUES ((SELECT id from regions WHERE name='frame'))
+/* ... */
+
+INSERT INTO bmx_regions (id) VALUES ((SELECT id from regions WHERE name='frame'))
+/* ... */
+
+INSERT INTO hybrid_regions (id) VALUES ((SELECT id from regions WHERE name='frame'))
+/* ... */
+
+INSERT INTO electric_regions (id) VALUES ((SELECT id from regions WHERE name='frame'))
+/* ... */
+
+INSERT INTO tandem_regions (id) VALUES ((SELECT id from regions WHERE name='frame'))
+/* ... */
+
+INSERT INTO cruiser_regions (id) VALUES ((SELECT id from regions WHERE name='frame'))
+/* ... */
+
+
+/* Add parts to regions */
+INSERT INTO handlebar_parts (id) VALUES ((SELECT id from parts WHERE name='<part_name>')) /* Be sure to replace the part name */
+/* ... */
+
+INSERT INTO fork_parts (id) VALUES ((SELECT id from parts WHERE name='<part_name>'))
+/* ... */
+
+INSERT INTO front_tire_parts (id) VALUES ((SELECT id from parts WHERE name='<part_name>'))
+/* ... */
+
+INSERT INTO rear_tire_parts (id) VALUES ((SELECT id from parts WHERE name='<part_name>'))
+/* ... */
+
+INSERT INTO crank_parts (id) VALUES ((SELECT id from parts WHERE name='<part_name>'))
+/* ... */
+
+INSERT INTO seatpost_parts (id) VALUES ((SELECT id from parts WHERE name='<part_name>'))
+/* ... */
+
+INSERT INTO midframe_parts (id) VALUES ((SELECT id from parts WHERE name='<part_name>'))
+/* ... */
+
+
+/* Add tools to regions */
+INSERT INTO handlebar_parts (id) VALUES ((SELECT id from parts WHERE name='<tool_name>')) /* Be sure to replace the tool name */
+/* ... */
+
+INSERT INTO fork_parts (id) VALUES ((SELECT id from parts WHERE name='<tool_name>'))
+/* ... */
+
+INSERT INTO front_tire_parts (id) VALUES ((SELECT id from parts WHERE name='<tool_name>'))
+/* ... */
+
+INSERT INTO rear_tire_parts (id) VALUES ((SELECT id from parts WHERE name='<tool_name>'))
+/* ... */
+
+INSERT INTO crank_parts (id) VALUES ((SELECT id from parts WHERE name='<tool_name>'))
+/* ... */
+
+INSERT INTO seatpost_parts (id) VALUES ((SELECT id from parts WHERE name='<tool_name>'))
+/* ... */
+
+INSERT INTO midframe_parts (id) VALUES ((SELECT id from parts WHERE name='<tool_name>'))
+/* ... */
