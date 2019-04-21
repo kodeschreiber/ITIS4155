@@ -3,6 +3,8 @@ import sqlite3
 class Region:
   name = None
   desc = None
+  diag = None
+  url = None
 
 class RegionDB:
 
@@ -17,7 +19,7 @@ class RegionDB:
     if res == None or len(res) < 1:
       raise ValueError(f'No such entry in database: {region}')
     ret = Region()
-    ret.name, ret.desc = res
+    ret.name, ret.desc, ret.diag, ret.url = res
     return ret
 
   def getAll(self):
@@ -28,6 +30,6 @@ class RegionDB:
     ret = list()
     for row in res:
       tmp = Region()
-      tmp.name, tmp.desc = row
+      tmp.name, tmp.desc, tmp.diag, tmp.url = row
       ret.append(tmp)
     return ret

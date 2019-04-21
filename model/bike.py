@@ -4,6 +4,7 @@ class Bike:
   name = None
   desc = None
   avgp = 0
+  url = None
 
 class BikeDB:
 
@@ -18,7 +19,7 @@ class BikeDB:
     if res == None or len(res) < 1:
       raise ValueError(f'No such entry in database: {part}')
     ret = Bike()
-    ret.name, ret.desc, ret.avgp = res
+    ret.name, ret.desc, ret.avgp, ret.url = res
     return ret
     
   def getAll(self):
@@ -29,6 +30,6 @@ class BikeDB:
     ret = list()
     for row in res:
       tmp = Bike()
-      tmp.name, tmp.desc, tmp.avgp = row
+      tmp.name, tmp.desc, tmp.avgp, tmp.url = row
       ret.append(tmp)
     return ret

@@ -4,6 +4,7 @@ class Part:
   name = None
   desc = None
   avgp = 0
+  url = None
 
 class PartDB:
 
@@ -18,7 +19,7 @@ class PartDB:
     if res == None or len(res) < 1:
       raise ValueError(f'No such entry in database: {part}')
     ret = Part()
-    ret.name, ret.desc, ret.avgp = res
+    ret.name, ret.desc, ret.avgp, ret.url = res
     return ret
 
   def getAll(self):
@@ -29,6 +30,6 @@ class PartDB:
     ret = list()
     for row in res:
       tmp = Part()
-      tmp.name, tmp.desc, tmp.avgp = row
+      tmp.name, tmp.desc, tmp.avgp, tmp.url = row
       ret.append(tmp)
     return ret

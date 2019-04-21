@@ -4,6 +4,7 @@ class Tool:
   name = None
   desc = None
   avgp = 0
+  url = None
 
 class ToolDB:
 
@@ -18,7 +19,7 @@ class ToolDB:
     if res == None or len(res) < 1:
       raise ValueError(f'No such entry in database: {tool}')
     ret = Tool()
-    ret.name, ret.desc, ret.avgp = res
+    ret.name, ret.desc, ret.avgp, ret.url = res
     return ret
 
   def getAll(self):
@@ -29,6 +30,6 @@ class ToolDB:
     ret = list()
     for row in res:
       tmp = Tool()
-      tmp.name, tmp.desc, tmp.avgp = row
+      tmp.name, tmp.desc, tmp.avgp, tmp.url = row
       ret.append(tmp)
     return ret
