@@ -22,7 +22,7 @@ bdb = BikeDB(dbpath)
 pdb = PartDB(dbpath)
 tdb = ToolDB(dbpath)
 rdb = RegionDB(dbpath)
-ldb = LinkerDB(dbpath)
+ldb = LinkDB(dbpath)
 
 # Template Wrapper
 def wrap(temp, title):
@@ -61,7 +61,7 @@ def bikes():
 # Select Affected Region
 @route('/bikes/regions')
 def regions():
-  bike = request.query.get('bike')
+  bike = request.query.bike
   return wrap(template('sample_page.tpl', regions=ldb.getRegions(bike, rdb)), 'Bikes')
 
 # List of part/tool
@@ -72,13 +72,13 @@ def search():
 # Show info on a specific part/tool/bike/region
 @route('/show')
 def show():
-  target = request.query.get('obj')
+  target = request.query.obj
   return wrap(template('sample_page.tpl', showobj=target), target.capitalize())
   
 # Show diagnosis
 @route('/diagnose')
 def diag():
-  reg = request.query.get('region')
+  reg = request.query.region
   region = rdb.get(reg)
   parts = ldb.getParts(reg, pdb)
   tools = ldb.getTools(reg, tdb)
@@ -86,12 +86,12 @@ def diag():
   
   
 ### Error Handling ###
-@error(404)
-def e404(err):
-  return wrap(template('error_page.tpl', ), 'Page Not Found')
+# @error(404)
+# def e404(err):
+#   return wrap(template('error_page.tpl', ), 'Page Not Found')
   
-@error(500)
-def e500(err):
-  return wrap(template('error_page.tpl', ), 'Server Error')
+# @error(500)
+# def e500(err):
+#   return wrap(template('error_page.tpl', ), 'Server Error')
 
 run(host='localhost', port=8000, debug=True)
