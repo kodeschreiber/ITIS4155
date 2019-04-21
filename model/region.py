@@ -14,8 +14,7 @@ class RegionDB:
     self._conn = sqlite3.connect(dbpath)
 
   def get(self, region):
-    self._conn.execute("SELECT * FROM regions WHERE name = '?'", (region))
-    res = self._conn.fetchone()
+    res = self._conn.execute("SELECT * FROM regions WHERE name = '?'", (region)).fetchone()
     if res == None or len(res) < 1:
       raise ValueError(f'No such entry in database: {region}')
     ret = Region()
@@ -23,8 +22,7 @@ class RegionDB:
     return ret
 
   def getAll(self):
-    self._conn.execute("SELECT * FROM regions")
-    res = self._conn.fetchall()
+    self._conn.execute("SELECT * FROM regions").fetchall()
     if res == None or len(res) < 1:
       raise ValueError(f'No such entries in table')
     ret = list()

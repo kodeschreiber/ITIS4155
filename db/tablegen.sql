@@ -14,7 +14,7 @@ CREATE TABLE parts (
   url VARCHAR(512)
 );
 
-CREATE TABLE bike (
+CREATE TABLE bikes (
   id INT NOT NULL PRIMARY KEY,
   name VARCHAR(32),
   descript VARCHAR(1000),
@@ -22,7 +22,7 @@ CREATE TABLE bike (
   url VARCHAR(512)
 );
 
-CREATE TABLE region (
+CREATE TABLE regions (
   id INT NOT NULL PRIMARY KEY,
   name VARCHAR(32),
   descript VARCHAR(1000),

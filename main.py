@@ -67,7 +67,7 @@ def regions():
 # List of part/tool
 @route('/search')
 def search():
-  return wrap(template('sample_page.tpl', tools=tdb.getAll(), parts=pdb.getAll()), 'Search')
+  return wrap(template('search.tpl', tools=tdb.getAll(), parts=pdb.getAll()), 'Search')
   
 # Show info on a specific part/tool/bike/region
 @route('/show')

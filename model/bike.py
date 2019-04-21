@@ -14,8 +14,7 @@ class BikeDB:
     self._conn = sqlite3.connect(dbpath)
 
   def get(self, bike):
-    self._conn.execute("SELECT * FROM bikes WHERE name = '?'", (bike))
-    res = self._conn.fetchone()
+    res = self._conn.execute("SELECT * FROM bikes WHERE name = '?'", (bike)).fetchone()
     if res == None or len(res) < 1:
       raise ValueError(f'No such entry in database: {part}')
     ret = Bike()
@@ -23,8 +22,7 @@ class BikeDB:
     return ret
     
   def getAll(self):
-    self._conn.execute("SELECT * FROM bikes")
-    res = self._conn.fetchall()
+    self._conn.execute("SELECT * FROM bikes").fetchall()
     if res == None or len(res) < 1:
       raise ValueError(f'No such entries in table')
     ret = list()
