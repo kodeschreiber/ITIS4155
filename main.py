@@ -41,7 +41,7 @@ def js():
 # Index
 @route('/')
 def index():
-  return wrap(template('sample_page.tpl'), 'Home')
+  return wrap(template('index.tpl'), 'Home')
 
 # About Us
 @route('/about')
