@@ -1,16 +1,19 @@
 #!/usr/bin/python3
 
-from bottle import *
 import time
 import hashlib
 import os
 import random
+import warnings
 
 from model.bike   import *
 from model.linker import *
 from model.part   import *
 from model.region import *
 from model.tool   import *
+
+with warnings.catch_warnings():
+  warnings.filterwarnings("ignore",category=DeprecationWarning)
 
 TEMPLATE_PATH.append('./view/html')
 root = os.path.abspath('./')

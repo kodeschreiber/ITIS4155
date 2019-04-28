@@ -9,8 +9,6 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css'>
 
-      <link rel="stylesheet" href="css/style.css">
-
   
 </head>
 
@@ -105,7 +103,7 @@ accessibility of information pertaining to the methods of bicycle repair and par
         <h4>Johnny Trinh</h4>
         <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> </div>
       <div class="three columns"> <img src="http://pm1.narvii.com/6499/219884e07baa4a44536a4f33d4defd4aac11728f_00.jpg" width="220" height="220" alt=""/>
-        <h4>Jason Jensen</h4>
+        <h4>Jason Jansen</h4>
         <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> </div>
       <div class="three columns"> <img src="https://vignette.wikia.nocookie.net/nintendo/images/d/d7/Wartortle.png/revision/latest?cb=20141002083217&path-prefix=en" width="220" height="220" alt=""/>
         <h4>Muhammad Oner</h4>
@@ -188,12 +186,6 @@ accessibility of information pertaining to the methods of bicycle repair and par
 </footer>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
-
-  
-
-    <script  src="js/index.js"></script>
-
-
 
 
 </body>
