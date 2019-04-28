@@ -1,37 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" >
-
-<head>
-  <meta charset="UTF-8">
-  <title>FYOB</title>
-  
-  
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css'>
-
-  
-</head>
-
-<body>
-
   <!-- Header Section
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<header id="header">
-  <div class="main_nav">
-    <div class="container">
-      <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
-      <nav>
-        <ul>
-          <li><a class="smoothscroll" href="#header">Home</a></li>
-          <li><a class="smoothscroll" href="#about">About</a></li>
-      
-          <li><a class="smoothscroll" href="#portfolio">Gallery</a></li>
-          <li><a class="smoothscroll" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+
   <div class="title">
 <!--     <div><span class="typcn typcn-heart-outline icon heading"></span></div> -->
     <img class="topImage" src="https://i.imgur.com/93oFrT9.png" title="source: imgur.com" />

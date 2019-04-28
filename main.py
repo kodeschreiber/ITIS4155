@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+from bottle import *
 import time
 import hashlib
 import os
@@ -88,13 +89,13 @@ def diag():
   return wrap(template('sample_page.tpl', region=region, parts=parts, tools=tools), 'Diagnosis')
   
   
-### Error Handling ###
-# @error(404)
-# def e404(err):
-#   return wrap(template('error_page.tpl', ), 'Page Not Found')
+## Error Handling ###
+@error(404)
+def e404(err):
+  return wrap(template('error.tpl', err='Page not Found'), 'Page Not Found')
   
-# @error(500)
-# def e500(err):
-#   return wrap(template('error_page.tpl', ), 'Server Error')
+@error(500)
+def e500(err):
+  return wrap(template('error.tpl', err='Internal Server Error'), 'Server Error')
 
 run(host='localhost', port=8000, debug=True)

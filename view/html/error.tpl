@@ -1,1 +1,1 @@
-Sample Text
+<h1 class='page_message'>{{err}}</h1>
