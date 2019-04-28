@@ -29,24 +29,27 @@ accessibility of information pertaining to the methods of bicycle repair and par
       </p>
       <p>We also aspire to be a place for bike culture. From reviews on popular models, trick guides, and much more!</p>
     </div>
-    <div class="row">
+      <div class="row">
+      <div class="six_columns">
+          <h3><span class="typcn typcn-lightbulb icon"></span><a href="findAModel.html">Find a Model</a></h3>
+          <p>New to biking? How would you like to find the perfect bike for you based on how much you want to spend and where you'll be touring?</p>
+        </div>
+      </div>
+      <div class="row">
       <div class="six_columns">
         <h3><span class="typcn typcn-device-desktop icon"></span><a href="mantenanceTutorials.html"> Maintenance  Tutorials </a></h3>
         <p>Need help re-looping your chain? How about changing your tires? Go through our interactive guide and get a diagnosis of your problem with solution videos!</p>
       </div>
-      <div class="six_columns">
+      <!--div class="six_columns">
         <h3><span class="typcn typcn-device-desktop icon"></span><a href="trickGuides.html">Trick Guides</a></h3>
         <p>Want to learn how to pop a wheelie and impress your friends? How about seeing highlights from last year's pro competition? Check us out!</p>
-      </div>
+      </div-->
       <div class="row">
         <div class="six_columns">
           <h3><span class="typcn typcn-cog-outline icon"></span><a href="parts.html">Parts</a></h3>
           <p>Ever wondered what parts you need to fix your bike? How about seeing your purchasing and saving options?</p>
         </div>
-        <div class="six_columns">
-          <h3><span class="typcn typcn-lightbulb icon"></span><a href="findAModel.html">Find a Model</a></h3>
-          <p>New to biking? How would you like to find the perfect bike for you based on how much you want to spend and where you'll be touring?</p>
-        </div>
+        
       </div>
     </div>
   </div>
