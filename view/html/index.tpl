@@ -1,7 +1,5 @@
   <!-- Header Section
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-
   <div class="title">
 <!--     <div><span class="typcn typcn-heart-outline icon heading"></span></div> -->
     <img class="topImage" src="https://i.imgur.com/93oFrT9.png" title="source: imgur.com" />
@@ -142,22 +140,3 @@ accessibility of information pertaining to the methods of bicycle repair and par
     </form>
   </div>
 </section>
-
-<!-- Footer Section
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-
-<footer>
-  <div class="container">
-    <div class="nine columns">
-    
-    </div>
-    <div class="three columns"> <span class="typcn typcn-social-facebook-circular socialIcons"></span> <span class="typcn typcn-social-instagram-circular socialIcons"></span> <span class="typcn typcn-social-google-plus-circular socialIcons"></span> <span class="typcn typcn-social-linkedin-circular socialIcons"></span> </div>
-  </div>
-</footer>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
-
-
-</body>
-
-</html>

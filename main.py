@@ -29,13 +29,18 @@ rdb = RegionDB(dbpath)
 ldb = LinkDB(dbpath)
 
 # Template Wrapper
-def wrap(temp, title):
-  return ( template('header.tpl', title=title, refresh=refresh), temp, template('footer.tpl') )
+def wrap(temp, title, isHome=False):
+  return ( template('header.tpl', title=title, refresh=refresh, isHome=isHome), temp, template('footer.tpl') )
 
 # CSS
 @route('/src/css')
 def css():
   return static_file('format.css', root=root+'/view/css')
+  
+# CSS for Home
+@route('/src/homecss')
+def css():
+  return static_file('home.css', root=root+'/view/css')
   
 # JS
 @route('/src/js')
@@ -44,8 +49,9 @@ def js():
 
 # Index
 @route('/')
+@route('/home')
 def index():
-  return wrap(template('index.tpl'), 'Home')
+  return wrap(template('index.tpl'), 'Home', isHome=True)
 
 # About Us
 @route('/about')
