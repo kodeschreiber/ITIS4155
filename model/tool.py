@@ -28,6 +28,6 @@ class ToolDB:
     ret = list()
     for row in res:
       tmp = Tool()
-      tmp.iid, tmp.name, tmp.desc, tmp.avgp, tmp.url = row
+      tmp.iid, tmp.name, tmp.desc, tmp.avgp, tmp.url = row[1:]
       ret.append(tmp)
     return ret

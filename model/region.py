@@ -22,12 +22,12 @@ class RegionDB:
     return ret
 
   def getAll(self):
-    self._conn.execute("SELECT * FROM regions").fetchall()
+    res = self._conn.execute("SELECT * FROM regions").fetchall()
     if res == None or len(res) < 1:
       raise ValueError(f'No such entries in table')
     ret = list()
     for row in res:
       tmp = Region()
-      tmp.name, tmp.desc, tmp.diag, tmp.url = row
+      tmp.name, tmp.desc, tmp.diag, tmp.url = row[1:]
       ret.append(tmp)
     return ret

@@ -56,7 +56,7 @@ def index():
 # Choose a bike
 @route('/bikes')
 def bikes():
-  return wrap(template('sample_page.tpl', bikes=bdb.getAll()), 'Bikes')
+  return wrap(template('bikes.tpl', bikes=bdb.getAll()), 'Bikes')
   
 # Select Affected Region
 @route('/bikes/regions')

@@ -22,12 +22,13 @@ class BikeDB:
     return ret
     
   def getAll(self):
-    self._conn.execute("SELECT * FROM bikes").fetchall()
+    res = self._conn.execute("SELECT * FROM bikes").fetchall()
     if res == None or len(res) < 1:
       raise ValueError(f'No such entries in table')
     ret = list()
     for row in res:
       tmp = Bike()
-      tmp.name, tmp.desc, tmp.avgp, tmp.url = row
+      print(row)
+      tmp.name, tmp.desc, tmp.avgp, tmp.url = row[1:]
       ret.append(tmp)
     return ret
