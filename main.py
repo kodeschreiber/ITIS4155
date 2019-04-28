@@ -53,16 +53,6 @@ def js():
 def index():
   return wrap(template('index.tpl'), 'Home', isHome=True)
 
-# About Us
-@route('/about')
-def about():
-  return wrap(template('sample_page.tpl'), 'About')
-
-# Contact
-@route('/contact')
-def contact():
-  return wrap(template('sample_page.tpl'), 'Contact')
-
 # Choose a bike
 @route('/bikes')
 def bikes():
@@ -104,4 +94,4 @@ def e404(err):
 def e500(err):
   return wrap(template('error.tpl', err='Internal Server Error'), 'Server Error')
 
-run(host='localhost', port=8000, debug=True)
+run(host='0.0.0.0', port=8000, debug=True)
