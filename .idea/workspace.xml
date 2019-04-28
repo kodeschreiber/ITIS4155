@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61181ea3-bdfc-495e-b054-0dd0fee23c49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/view/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/view/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/insertdata.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/insertdata.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,12 +11,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/insertdata.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1938">
+              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
             </state>
           </provider>
         </entry>
@@ -30,6 +39,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/view/readme.txt" />
+        <option value="$PROJECT_DIR$/db/insertdata.sql" />
       </list>
     </option>
   </component>
@@ -50,6 +60,11 @@
             <path>
               <item name="ITIS4155" type="b2602c69:ProjectViewProjectNode" />
               <item name="ITIS4155" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITIS4155" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITIS4155" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ITIS4155" type="b2602c69:ProjectViewProjectNode" />
@@ -95,13 +110,14 @@
     <frame x="68" y="20" width="1400" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
+      <window_info id="DB Browser" />
+      <window_info id="Project Explorer" />
+      <window_info id="Job Explorer" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24944974" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Console" />
+      <window_info anchor="bottom" id="DB Execution Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -109,6 +125,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -119,6 +139,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/insertdata.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
         </state>
       </provider>
     </entry>

@@ -63,54 +63,55 @@ INSERT INTO bikes (id, name, descript, avgprice, url) VALUES (
   
 /* Please remove quotes for the third entry on each; it's supposed to be numeric */  
 
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (1, 'allen wrench', '', '', '');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (2, 'standard-head screwdriver', '', '', '');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (3, 'philips-head screwdriver', '', '', '');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (4, 'chain breaker', '', '', '');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (5, 'chain gap', '', '', '');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (6, 'petal wrench', '', '', '');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (7, 'spoke wrench', '', '', '');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (8, 'sockets', '', '', '');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (9, 'wrench', '', '', '');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (10, 'tire puller', '', '', '');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (11, 'air pump', '', '', '');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (12, 'pressure guage', '', '', '');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (13, 'chain cleaner', '', '', '');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (14, 'presta valve adapter', '', '', '');
 
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (1, 'tire', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (2, 'frame', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (3, 'cassette', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (4, 'derailleur', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (5, 'chain', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (6, 'crank', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (7, 'petal', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (8, 'handlebar', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (9, 'grip', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (10, 'screw', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (11, 'hub', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (12, 'spoke', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (13, 'rim', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (14, 'tube', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (15, 'saddle', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (16, 'seatpost', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (17, 'chain lubricant', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (18, 'grease', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (19, 'tire patch', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (20, 'tire sealent', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (21, 'brake cables', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (22, 'shifter cables', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (23, 'fork', '', '', '');
-INSERT INTO parts (id, name, descript, avgprice, url) VALUES (24, 'shocks', '', '', '');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (1, 'allen-wrench','Allen wrench is a small handheld tool thats used for for driving bolts and screws with a hexagonal socket.' , '$7.99', '');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (2, 'standard-head screwdriver', 'A screwdriver is a tool, manual or powered, for screwing and unscrewing (inserting and removing) screws.', '$3.99', 'https://imgur.com/oyL6Vj6');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (3, 'philips-head screwdriver', '$3.99', '', 'https://imgur.com/mi2TewP');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (4, 'chain breaker', '$9.99', '', 'https://imgur.com/4mjhKIF');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (5, 'chain gap', '$5.99', '', 'https://imgur.com/nRRtV6p');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (6, 'pedal wrench', 'A standard "pedal wrench" is an open-ended wrench designed to be thin enough to fit the narrow wrench flats (gripping surface) typical to pedals.', '$12.65', 'https://imgur.com/AQDcCCc');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (7, 'spoke wrench', 'A spoke wrench or spoke key is a small wrench or tool used to adjust the tension in the spokes of a bicycle wheel,', '$4.99', 'https://imgur.com/0y0X9cx');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (8, 'sockets', '', '$15.99', 'https://imgur.com/RX68oKy');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (9, 'wrench', 'A wrench or spanner is a tool used to provide grip and mechanical advantage in applying torque to turn objects—usually rotary fasteners, such as nuts and bolts—or keep them from turning.', '$9.99', 'https://imgur.com/RQWDxPp');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (10, 'tire puller', '', '$4.99', 'https://imgur.com/1uuQiWk');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (11, 'air pump', 'A device for pumping air into or out of an enclosed space.', '$9.99', '');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (12, 'pressure guage', 'Pressure gauges measure positive pressure. The most common type of gauge, they’re used with pumps, filters, regulators, and in process lines.', '$6.99  ', 'https://imgur.com/XXC2LzN');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (13, 'chain cleaner', 'To clean the dirty chains.', '$14.99', 'https://imgur.com/S4hm64s');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (14, 'presta valve adapter', 'Presta valve comprises an outer valve stem and an inner valve body.', '$4.99', 'https://imgur.com/bPdk669');
 
-INSERT INTO regions (id, name, descript, diags, url) VALUES (1, 'handlebar', '', '', '');
-INSERT INTO regions (id, name, descript, diags, url) VALUES (2, 'fork', '', '', '');
-INSERT INTO regions (id, name, descript, diags, url) VALUES (3, 'front_tire', '', '', '');
-INSERT INTO regions (id, name, descript, diags, url) VALUES (4, 'rear_tire', '', '', '');
-INSERT INTO regions (id, name, descript, diags, url) VALUES (5, 'rear_cassette', '', '', '');
-INSERT INTO regions (id, name, descript, diags, url) VALUES (6, 'crank', '', '', '');
-INSERT INTO regions (id, name, descript, diags, url) VALUES (7, 'seatpost', '', '', '');
-INSERT INTO regions (id, name, descript, diags, url) VALUES (8, 'midframe', '', '', '');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (1, 'tire', 'A tire or tyre is a ring-shaped component that surrounds a wheels rim to transfer a vehicles load from the axle through the wheel to the ground and to provide traction on the surface traveled over.', '$35.00', '');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (2, 'frame', 'A bicycle frame is the main component of a bicycle, onto which wheels and other components are fitted.', '$100.00', '');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (3, 'cassette', 'A bicycle cassette is the cluster of sprockets located on the rear hub of your bike, slotting onto a freehub body and held firmly in place with a threaded cassette lockring.', '$50.00', 'https://imgur.com/nyiq3Dn');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (4, 'derailleur', 'Derailleur gears are a variable-ratio transmission system commonly used on bicycles, consisting of a chain, multiple sprockets of different sizes, and a mechanism to move the chain from one sprocket to another.', '$23.00', 'https://imgur.com/K68tfHb');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (5, 'chain', 'A bicycle chain is a roller chain that transfers power from the pedals to the drive-wheel of a bicycle, thus propelling it.', '$20.00', '');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (6, 'crank', 'The crankset or chainset, is the component of a bicycle drivetrain that converts the reciprocating motion of the riders legs into rotational motion used to drive the chain or belt, which in turn drives the rear wheel', '$30.00', '');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (7, 'pedal', 'The bicycle pedal is the part of a bicycle that the rider pushes with their foot to propel the bicycle.', '$10.00', 'https://imgur.com/zOsfyxH');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (8, 'handlebar', 'A bicycle handlebar is the steering control for bicycles; it is the equivalent of a steering wheel for vehicles and vessels.', '$15.00', 'https://imgur.com/aCho6YE');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (9, 'grip', '', '$10.00', 'https://imgur.com/lredRUP');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (10, 'screw', 'A screw is a type of fastener, in some ways similar to a bolt, typically made of metal, and characterized by a helical ridge, known as a male thread.', '$5.00', 'https://imgur.com/uMFytm1');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (11, 'hub', 'A hub is the center part of a bicycle wheel. It consists of an axle, bearings and a hub shell.', '$13.00', 'https://imgur.com/26o615s');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (12, 'spoke', 'A spoke is one of some number of rods radiating from the center of a wheel, connecting the hub with the round traction surface. ', '$5.00', '');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (13, 'rim', '', '$45.00', 'https://imgur.com/q5U91JK');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (14, 'tube', 'A bicycle tire is not airtight by itself, so it uses an inner tube, which is basically a doughnut-shaped rubber balloon, with a valve for inflation.', '$10.00', 'https://imgur.com/39ehRj0');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (15, 'saddle', 'A bicycle saddle, often called a seat, is one of 5 contact points on an upright bicycle, the others being the 2 foot pedals and the 2 handles on 1 handlebar.', '$20.00', '');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (16, 'seatpost', 'A bicycle seatpost, seatpin, saddlepole, saddle pillar, or saddle pin is a tube that extends upwards from the bicycle frame to the saddle.', '$13.00', 'https://imgur.com/3bddn7n');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (17, 'chain lubricant', '', '$10.00', 'https://imgur.com/YXUlnL1');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (18, 'grease', 'Grease is a semisolid lubricant.', '$10.00', 'https://imgur.com/fklrABn');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (19, 'tire patch', 'A rubber stem or plug, must be applied to fill the puncture injury and a patch must be applied to seal the inner liner.', '$6.00', 'https://imgur.com/Zm3uVLw');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (20, 'tire sealent', 'These products inject a sealant into your flat tire to seal the leak, and a gas to fill the rest of the tire', '$5.00', 'https://imgur.com/hBxOpfP');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (21, 'brake cables', 'Cables are used for braking on bikes with cable-pull brakes.', '$6.00', 'https://imgur.com/QSMYhJ8');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (22, 'shifter cables', 'The shift selector cable puts the transmission into the proper gear, which is indicated by the shift selector that it has been moved by the driver.', '$10.00', 'https://imgur.com/RMhhx29');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (23, 'fork', 'A bicycle fork is the part of a bicycle that holds the front wheel. A fork typically consists of two blades which are joined at the top by a fork crown.', '$30.00', 'https://imgur.com/rn1q7Kf');
+INSERT INTO parts (id, name, descript, avgprice, url) VALUES (24, 'shocks', 'A shock is suspension that helps rider and bike absorb large shocks when landing jumps', '$110.00', 'https://imgur.com/LPDCH32');
+
+INSERT INTO regions (id, name, descript, diags, url) VALUES (1, 'handlebar', 'A bicycle handlebar is the steering control for bicycles; it is the equivalent of a steering wheel for vehicles and vessels.', '$25.00', '');
+INSERT INTO regions (id, name, descript, diags, url) VALUES (2, 'fork', 'A bicycle fork is the part of a bicycle that holds the front wheel. A fork typically consists of two blades which are joined at the top by a fork crown.', '$30.00', 'https://imgur.com/rn1q7Kf');
+INSERT INTO regions (id, name, descript, diags, url) VALUES (3, 'front_tire', 'A bicycle wheel is a wheel, most commonly a wire wheel, designed for a bicycle. A pair is often called a wheelset, especially in the context of ready built "off the shelf" performance-oriented wheels.', '$35.00', 'https://imgur.com/nP28GVa');
+INSERT INTO regions (id, name, descript, diags, url) VALUES (4, 'rear_tire', 'A bicycle wheel is a wheel, most commonly a wire wheel, designed for a bicycle. A pair is often called a wheelset, especially in the context of ready built "off the shelf" performance-oriented wheels.', '$35.00', 'https://imgur.com/nP28GVa');
+INSERT INTO regions (id, name, descript, diags, url) VALUES (5, 'rear_cassette', 'A bicycle cassette is the cluster of sprockets located on the rear hub of your bike, slotting onto a freehub body and held firmly in place with a threaded cassette lockring.', '$50.00', 'https://imgur.com/CBsS7hF');
+INSERT INTO regions (id, name, descript, diags, url) VALUES (6, 'crank', 'The crankset or chainset, is the component of a bicycle drivetrain that converts the reciprocating motion of the riders legs into rotational motion used to drive the chain or belt, which in turn drives the rear wheel.', '$30.00', 'https://imgur.com/lz0W9qH');
+INSERT INTO regions (id, name, descript, diags, url) VALUES (7, 'seatpost', 'A bicycle seatpost, seatpin, saddlepole, saddle pillar, or saddle pin is a tube that extends upwards from the bicycle frame to the saddle.', '$15.00', 'https://imgur.com/3bddn7n');
+INSERT INTO regions (id, name, descript, diags, url) VALUES (8, 'midframe', 'A bicycle frame is the main component of a bicycle, onto which wheels and other components are fitted', '$100.00', 'https://imgur.com/E48L05w');
 
 /* Linker Tables (bikes -> regions, regions -> tools, regions -> parts)
 
