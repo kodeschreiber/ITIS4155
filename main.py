@@ -98,6 +98,7 @@ def diag():
 
 
 ### --------------------- ERROR PAGES --------------------- ###@error(404)
+@error(404)
 def e404(err):
   return wrap(template('error.tpl', err='Page not Found'), 'Page Not Found')
 

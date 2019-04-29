@@ -12,6 +12,12 @@
 	/*background-color:red;*/
 /*}*/
 
+#err_logo {
+  margin-left:40vw;
+  width:20vw;
+  height:auto;
+}
+
 .page_message {
   text-align:center;
 }
