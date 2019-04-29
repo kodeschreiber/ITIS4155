@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61181ea3-bdfc-495e-b054-0dd0fee23c49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/insertdata.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/insertdata.sql" afterDir="false" />
     </list>
@@ -26,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/insertdata.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="93" column="130" selection-start-line="93" selection-start-column="130" selection-end-line="93" selection-end-column="130" />
+            <state relative-caret-position="79">
+              <caret line="66" column="101" selection-start-line="66" selection-start-column="101" selection-end-line="66" selection-end-column="101" />
             </state>
           </provider>
         </entry>
@@ -50,11 +49,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="48" />
+    <option name="y" value="92" />
     <option name="width" value="1750" />
-    <option name="height" value="980" />
+    <option name="height" value="968" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -142,10 +141,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="39" y="74" width="1400" height="774" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2247191" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24944974" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Project Explorer" order="3" />
@@ -153,7 +152,7 @@
       <window_info id="Job Explorer" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3045326" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33489096" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -182,8 +181,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/insertdata.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="93" column="130" selection-start-line="93" selection-start-column="130" selection-end-line="93" selection-end-column="130" />
+        <state relative-caret-position="79">
+          <caret line="66" column="101" selection-start-line="66" selection-start-column="101" selection-end-line="66" selection-end-column="101" />
         </state>
       </provider>
     </entry>

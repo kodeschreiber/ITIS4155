@@ -66,14 +66,14 @@ INSERT INTO bikes (id, name, descript, avgprice, url) VALUES (
 
 INSERT INTO tools (id, name, descript, avgprice, url) VALUES (1, 'allen-wrench','Allen wrench is a small handheld tool thats used for for driving bolts and screws with a hexagonal socket.' , '$7.99', 'https://i.imgur.com/kQ2iytq.png');
 INSERT INTO tools (id, name, descript, avgprice, url) VALUES (2, 'standard-head screwdriver', 'A screwdriver is a tool, manual or powered, for screwing and unscrewing (inserting and removing) screws.', '$3.99', 'https://i.imgur.com/oyL6Vj6.png');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (3, 'philips-head screwdriver', '$3.99', '', 'https://i.imgur.com/mi2TewP.png');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (4, 'chain breaker', '$9.99', '', 'https://i.imgur.com/4mjhKIF.png');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (5, 'chain gap', '$5.99', '', 'https://i.imgur.com/nRRtV6p.png');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (3, 'philips-head screwdriver', 'A tool with a flattened, cross-shaped, or star-shaped tip that fits into the head of a screw to turn it.','$3.99', 'https://i.imgur.com/mi2TewP.png');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (4, 'chain breaker', 'A chain tool is a small mechanical device used to "break" a bicycle chain in such a way that it can be mended with the same tool. ','$9.99', 'https://i.imgur.com/4mjhKIF.png');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (5, 'chain gap', 'Chain gap is tool to properly adjust the derailleur ', '$5.99', 'https://i.imgur.com/nRRtV6p.png');
 INSERT INTO tools (id, name, descript, avgprice, url) VALUES (6, 'pedal wrench', 'A standard "pedal wrench" is an open-ended wrench designed to be thin enough to fit the narrow wrench flats (gripping surface) typical to pedals.', '$12.65', 'https://i.imgur.com/AQDcCCc.png');
 INSERT INTO tools (id, name, descript, avgprice, url) VALUES (7, 'spoke wrench', 'A spoke wrench or spoke key is a small wrench or tool used to adjust the tension in the spokes of a bicycle wheel,', '$4.99', 'https://i.imgur.com/0y0X9cx.png');
 INSERT INTO tools (id, name, descript, avgprice, url) VALUES (8, 'sockets', 'Attaches to a ratchet to tighten and loosens nuts and bolts', '$15.99', 'https://i.imgur.com/RX68oKy.png');
 INSERT INTO tools (id, name, descript, avgprice, url) VALUES (9, 'wrench', 'A wrench or spanner is a tool used to provide grip and mechanical advantage in applying torque to turn objects—usually rotary fasteners, such as nuts and bolts—or keep them from turning.', '$9.99', 'https://i.imgur.com/RQWDxPp.png');
-INSERT INTO tools (id, name, descript, avgprice, url) VALUES (10, 'tire puller', '', '$4.99', 'https://i.imgur.com/1uuQiWk.png');
+INSERT INTO tools (id, name, descript, avgprice, url) VALUES (10, 'tire puller', 'A tool to help sperate tire from the rim.', '$4.99', 'https://i.imgur.com/1uuQiWk.png');
 INSERT INTO tools (id, name, descript, avgprice, url) VALUES (11, 'air pump', 'A device for pumping air into or out of an enclosed space.', '$9.99', 'https://i.imgur.com/jb6vcNk.png');
 INSERT INTO tools (id, name, descript, avgprice, url) VALUES (12, 'pressure guage', 'Pressure gauges measure positive pressure. The most common type of gauge, they’re used with pumps, filters, regulators, and in process lines.', '$6.99  ', 'https://i.imgur.com/XXC2LzN.png');
 INSERT INTO tools (id, name, descript, avgprice, url) VALUES (13, 'chain cleaner', 'To clean the dirty chains.', '$14.99', 'https://i.imgur.com/S4hm64s.png');
