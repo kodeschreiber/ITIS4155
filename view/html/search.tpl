@@ -10,17 +10,17 @@
   % for row in tools:
   <tr>
     <td> <a href="/show?type=tool&obj={{row.name}}"><img class='table_cell' src="{{row.url}}"> </a></td>
-    <td> <a href="/show?type=tool&obj={{row.name}}">{{row.name}}</a></td>
-    <td> {{row.desc}}</td>
-    <td> ${{row.avgp}}</td>
+    <td class='tabledata'> <a href="/show?type=tool&obj={{row.name}}" class='nostyle'>{{row.name.title()}}</a></td>
+    <td class='tabledata'> {{row.desc}}</td>
+    <td class='tabledata'> ${{row.avgp}}</td>
   </tr>
   % end
   % for row in parts:
   <tr>
     <td> <a href="/show?type=part&obj={{row.name}}"><img class='table_cell' src="{{row.url}}"> </a></td>
-    <td> <a href="/show?type=part&obj={{row.name}}">{{row.name}}</a></td>
-    <td> {{row.desc}}</td>
-    <td> ${{row.avgp}}</td>
+    <td class='tabledata'> <a href="/show?type=part&obj={{row.name}}" class='nostyle'>{{row.name.title()}}</a></td>
+    <td class='tabledata'> {{row.desc}}</td>
+    <td class='tabledata'> ${{row.avgp}}</td>
   </tr>
   % end
 </table>
