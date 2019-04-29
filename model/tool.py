@@ -14,11 +14,11 @@ class ToolDB:
     self._conn = sqlite3.connect(dbpath)
 
   def get(self, tool):
-    res = self._conn.execute("SELECT * FROM tools WHERE name = '?'", (tool)).fetchone()
+    res = self._conn.execute("SELECT * FROM tools WHERE name = ?", (tool,)).fetchone()
     if res == None or len(res) < 1:
       raise ValueError(f'No such entry in database: {tool}')
     ret = Tool()
-    ret.name, ret.desc, ret.avgp, ret.url = res
+    ret.id, ret.name, ret.desc, ret.avgp, ret.url = res
     return ret
 
   def getAll(self):
@@ -28,6 +28,6 @@ class ToolDB:
     ret = list()
     for row in res:
       tmp = Tool()
-      tmp.iid, tmp.name, tmp.desc, tmp.avgp, tmp.url = row[1:]
+      tmp.id, tmp.name, tmp.desc, tmp.avgp, tmp.url = row
       ret.append(tmp)
     return ret

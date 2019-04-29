@@ -1,6 +1,7 @@
 import sqlite3
 
 class Region:
+  id = None
   name = None
   desc = None
   diag = None
@@ -14,11 +15,11 @@ class RegionDB:
     self._conn = sqlite3.connect(dbpath)
 
   def get(self, region):
-    res = self._conn.execute("SELECT * FROM regions WHERE name = '?'", (region)).fetchone()
+    res = self._conn.execute("SELECT * FROM regions WHERE name = ?", (region,)).fetchone()
     if res == None or len(res) < 1:
       raise ValueError(f'No such entry in database: {region}')
     ret = Region()
-    ret.name, ret.desc, ret.diag, ret.url = res
+    ret.id, ret.name, ret.desc, ret.diag, ret.url = res
     return ret
 
   def getAll(self):
@@ -28,6 +29,6 @@ class RegionDB:
     ret = list()
     for row in res:
       tmp = Region()
-      tmp.name, tmp.desc, tmp.diag, tmp.url = row[1:]
+      tmp.id, tmp.name, tmp.desc, tmp.diag, tmp.url = row
       ret.append(tmp)
     return ret

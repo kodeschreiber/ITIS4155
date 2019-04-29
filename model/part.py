@@ -1,6 +1,7 @@
 import sqlite3
 
 class Part:
+  id = None
   name = None
   desc = None
   avgp = 0
@@ -14,11 +15,11 @@ class PartDB:
     self._conn = sqlite3.connect(dbpath)
 
   def get(self, part):
-    res = self._conn.execute("SELECT * FROM parts WHERE name = '?'", (part)).fetchone()
+    res = self._conn.execute("SELECT * FROM parts WHERE name = ?", (part,)).fetchone()
     if res == None or len(res) < 1:
       raise ValueError(f'No such entry in database: {part}')
     ret = Part()
-    ret.name, ret.desc, ret.avgp, ret.url = res
+    ret.id, ret.name, ret.desc, ret.avgp, ret.url = res
     return ret
 
   def getAll(self):
@@ -28,6 +29,6 @@ class PartDB:
     ret = list()
     for row in res:
       tmp = Part()
-      tmp.iid, tmp.name, tmp.desc, tmp.avgp, tmp.url = row[1:]
+      tmp.id, tmp.name, tmp.desc, tmp.avgp, tmp.url = row
       ret.append(tmp)
     return ret

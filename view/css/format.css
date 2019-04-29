@@ -16,6 +16,42 @@
   text-align:center;
 }
 
+.center {
+  text-align:center;
+}
+
+.show_page {
+  margin-left:35vw;
+}
+
+.region_button {
+  width:30vw;
+  height:20vh;
+  background-color: yellow;
+  opacity: 0.6;
+  padding: 10px;
+}
+
+a.nostyle {
+  transition: background-color 0.5s ease;
+}
+
+a.nostyle:link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a.nostyle:visited {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a.nostyle:hover {
+  background-color: #aaaaaa;
+}
+
 table.gridtable {
 	font-family: verdana,arial,sans-serif;
 	font-size:11px;
@@ -57,7 +93,7 @@ table.gridtable td {
   max-width:30vw;
   height:auto;
 }
-  
+
 /* Section from fyob.zip */
 
 /* Base Styles
@@ -73,7 +109,7 @@ body {
 	color: #222;
 }
 /* Grid
-********************************************************************* */  
+********************************************************************* */
 .container {
 	position: relative;
 	width: 100%;

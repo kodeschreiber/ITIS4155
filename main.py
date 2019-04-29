@@ -32,49 +32,61 @@ ldb = LinkDB(dbpath)
 def wrap(temp, title, isHome=False):
   return ( template('header.tpl', title=title, refresh=refresh, isHome=isHome), temp, template('footer.tpl') )
 
+### --------------------- STATIC FILES --------------------- ###
 # CSS
 @route('/src/css')
 def css():
   return static_file('format.css', root=root+'/view/css')
-  
+
 # CSS for Home
 @route('/src/homecss')
 def css():
   return static_file('home.css', root=root+'/view/css')
-  
+
 # JS
 @route('/src/js')
 def js():
   return static_file('script.js', root=root+'/view/js')
 
+### --------------------- WEB PAGES --------------------- ###
 # Index
 @route('/')
 @route('/home')
 def index():
-  return wrap(template('index.tpl'), 'Home', isHome=True)
+  return wrap(template('index.tpl', bikes=bdb.getAll()), 'Home', isHome=True)
 
 # Choose a bike
 @route('/bikes')
 def bikes():
   return wrap(template('bikes.tpl', bikes=bdb.getAll()), 'Bikes')
-  
+
 # Select Affected Region
 @route('/bikes/regions')
 def regions():
   bike = request.query.bike
-  return wrap(template('sample_page.tpl', regions=ldb.getRegions(bike, rdb)), 'Bikes')
+  return wrap(template('sample_page.tpl', bike=bdk.get(bike), regions=ldb.getRegions(bike, rdb)), 'Bikes')
 
 # List of part/tool
 @route('/search')
 def search():
   return wrap(template('search.tpl', tools=tdb.getAll(), parts=pdb.getAll()), 'Search')
-  
+
 # Show info on a specific part/tool/bike/region
 @route('/show')
 def show():
+  type = request.query.type
   target = request.query.obj
-  return wrap(template('sample_page.tpl', showobj=target), target.capitalize())
-  
+  data = None
+  if type == 'bike':
+    data = bdb.get(target)
+  elif type == 'tool':
+    data = tdb.get(target)
+  elif type == 'part':
+    data = pdb.get(target)
+  else:
+    pass # SERVER ERROR?
+  return wrap(template('show.tpl', showobj=data), target.capitalize())
+
 # Show diagnosis
 @route('/diagnose')
 def diag():
@@ -83,13 +95,12 @@ def diag():
   parts = ldb.getParts(reg, pdb)
   tools = ldb.getTools(reg, tdb)
   return wrap(template('sample_page.tpl', region=region, parts=parts, tools=tools), 'Diagnosis')
-  
-  
-## Error Handling ###
-@error(404)
+
+
+### --------------------- ERROR PAGES --------------------- ###@error(404)
 def e404(err):
   return wrap(template('error.tpl', err='Page not Found'), 'Page Not Found')
-  
+
 @error(500)
 def e500(err):
   return wrap(template('error.tpl', err='Internal Server Error'), 'Server Error')
