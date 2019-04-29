@@ -98,3 +98,21 @@ function onScroll() {
 const $$header = document.querySelector('.js-header');
 
 window.addEventListener('scroll', throttle(onScroll, 25));
+// Section from Model JS
+const details = document.querySelectorAll("details");
+
+function toggleOpen() {
+  if (this.open) {
+    return;
+    // if the user tries to close the existing open element
+  }
+  
+  for (i = 0; i < details.length; ++i) {
+    if(details[i].open) {
+      details[i].removeAttribute("open");
+      // close the already open details element
+    }
+  }
+}
+
+details.forEach(detail => detail.addEventListener('click', toggleOpen));

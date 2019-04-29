@@ -42,6 +42,11 @@ def css():
 @route('/src/homecss')
 def css():
   return static_file('home.css', root=root+'/view/css')
+  
+# CSS for Models
+@route('/src/modelcss')
+def css():
+  return static_file('model.css', root=root+'/view/css')
 
 # JS
 @route('/src/js')
@@ -56,15 +61,15 @@ def index():
   return wrap(template('index.tpl', bikes=bdb.getAll()), 'Home', isHome=True)
 
 # Choose a bike
-@route('/bikes')
+@route('/models')
 def bikes():
-  return wrap(template('bikes.tpl', bikes=bdb.getAll()), 'Bikes')
+  return wrap(template('models.tpl', bikes=bdb.getAll()), 'Bikes')
 
-# Select Affected Region
-@route('/bikes/regions')
-def regions():
-  bike = request.query.bike
-  return wrap(template('sample_page.tpl', bike=bdk.get(bike), regions=ldb.getRegions(bike, rdb)), 'Bikes')
+# # Select Affected Region
+# @route('/bikes/regions')
+# def regions():
+#   bike = request.query.bike
+#   return wrap(template('sample_page.tpl', bike=bdk.get(bike), regions=ldb.getRegions(bike, rdb)), 'Bikes')
 
 # List of part/tool
 @route('/search')
@@ -87,14 +92,14 @@ def show():
     pass # SERVER ERROR?
   return wrap(template('show.tpl', showobj=data), target.capitalize())
 
-# Show diagnosis
-@route('/diagnose')
-def diag():
-  reg = request.query.region
-  region = rdb.get(reg)
-  parts = ldb.getParts(reg, pdb)
-  tools = ldb.getTools(reg, tdb)
-  return wrap(template('sample_page.tpl', region=region, parts=parts, tools=tools), 'Diagnosis')
+# # Show diagnosis
+# @route('/diagnose')
+# def diag():
+#   reg = request.query.region
+#   region = rdb.get(reg)
+#   parts = ldb.getParts(reg, pdb)
+#   tools = ldb.getTools(reg, tdb)
+#   return wrap(template('sample_page.tpl', region=region, parts=parts, tools=tools), 'Diagnosis')
 
 
 ### --------------------- ERROR PAGES --------------------- ###@error(404)
