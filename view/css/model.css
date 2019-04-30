@@ -8,27 +8,33 @@
     box-sizing: border-box;
 }
 
-a {
+/* a {
     color: inherit;
     text-decoration: none;
 }
 
 body {
-    background-color: #eee;
-    color: #434344;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-}
+
+} */
 
 /* Page Layout */
 
+li {
+  font-size:12pt;
+}
+
 .container{
+  background-color: #eee;
+  color: #434344;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+
     max-width: 850px;
     margin: 0 auto;
     padding: 0 60px;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-areas: 
+    grid-template-areas:
         "header header"
         "sidebar main"
         "footer footer";
@@ -37,7 +43,7 @@ body {
 }
 
 /* Header */
-
+/*
 header{
     grid-area: header;
     color: #9f9c9c;
@@ -46,7 +52,7 @@ header{
     padding: 20px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-  
+
 }
 
 header nav {
@@ -68,7 +74,7 @@ header button {
     cursor: pointer;
     border-radius: 1.25rem;
     background-color: #51bb7b;
-}
+} */
 
 /* Main Section */
 
@@ -85,7 +91,7 @@ header button {
 .main p {
     font-size: 1rem;
     margin-bottom: .75rem;
-  
+
 }
 
 .main img {
@@ -119,7 +125,7 @@ header button {
 }
 
 /* Footer */
-
+/*
 footer {
     grid-area: footer;
     color: #fff;
@@ -135,19 +141,19 @@ footer p {
 }
 
 /*ADDING A REVEAL ANIMATION*/
-
+/*
 details.animation[open] summary ~ * {
   animation: sweep .5s ease-in-out;
 }
 
 @media (max-width: 600px) {
     .container{
-        /*  Redefine the grid into a single column layout. */
+          Redefine the grid into a single column layout.
         grid-template-columns: 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "header"
             "main"
             "sidebar"
             "footer";
     }
-}
+} */

@@ -40,6 +40,7 @@
 
 a.nostyle {
   transition: background-color 0.5s ease;
+  padding:2px;
 }
 
 a.nostyle:link {
@@ -120,7 +121,7 @@ body {
 }
 /* Grid
 ********************************************************************* */
-.container {
+.surr-container {
 	position: relative;
 	width: 100%;
 	max-width: 960px;
@@ -136,7 +137,7 @@ body {
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
-.container {
+.surr-container {
 	width: 85%;
 	padding: 0;
 }
@@ -144,7 +145,7 @@ body {
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-.container {
+.surr-container {
 	width: 80%;
 }
 .column,  .columns {
@@ -320,8 +321,11 @@ a:hover {
 	-ms-flex-item-align: center;
 	align-self: center;
 	padding: 2rem;
-	max-width: 960px;
+	/* max-width: 960px; */
 	text-align: center;
+  background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
 }
 .title .smallsep {
 	background: #fff;
@@ -687,7 +691,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 }
 /* Clearing
 ********************************************************************* */
-.container:after, .row:after, .u-cf {
+.surr-container:after, .row:after, .u-cf {
 	content: "";
 	display: table;
 	clear: both;

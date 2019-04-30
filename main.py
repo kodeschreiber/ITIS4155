@@ -29,8 +29,8 @@ rdb = RegionDB(dbpath)
 ldb = LinkDB(dbpath)
 
 # Template Wrapper
-def wrap(temp, title, isHome=False):
-  return ( template('header.tpl', title=title, refresh=refresh, isHome=isHome), temp, template('footer.tpl') )
+def wrap(temp, title, isHome=False, isModel=False, isTutorial=False):
+  return ( template('header.tpl', title=title, refresh=refresh, isHome=isHome, isModel=isModel, isTutorial=isTutorial), temp, template('footer.tpl') )
 
 ### --------------------- STATIC FILES --------------------- ###
 # CSS
@@ -42,11 +42,16 @@ def css():
 @route('/src/homecss')
 def css():
   return static_file('home.css', root=root+'/view/css')
-  
+
 # CSS for Models
 @route('/src/modelcss')
 def css():
   return static_file('model.css', root=root+'/view/css')
+
+# CSS for Tutorials
+@route('/src/tutcss')
+def css():
+  return static_file('tutorial.css', root=root+'/view/css')
 
 # JS
 @route('/src/js')
@@ -63,13 +68,17 @@ def index():
 # Choose a bike
 @route('/models')
 def bikes():
-  return wrap(template('models.tpl', bikes=bdb.getAll()), 'Bikes')
+  return wrap(template('models.tpl', bikes=bdb.getAll()), 'Bikes', isModel=True)
 
 # # Select Affected Region
 # @route('/bikes/regions')
 # def regions():
 #   bike = request.query.bike
 #   return wrap(template('sample_page.tpl', bike=bdk.get(bike), regions=ldb.getRegions(bike, rdb)), 'Bikes')
+
+@route('/tutorials')
+def tutorial():
+  return wrap(template('tutorials.tpl'), 'Home', isTutorial=True)
 
 # List of part/tool
 @route('/search')
